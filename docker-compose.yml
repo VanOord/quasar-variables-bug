@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  web:
+    image: quasar-tmp
+    build:
+      context: .
+    container_name: quasar-tmp
+    ports:
+      - "8036:8080"
+    tty: true
+    command: bash -c "tail -f /dev/null"
